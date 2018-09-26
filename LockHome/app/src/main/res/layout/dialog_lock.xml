@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dim_280"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLock"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_80"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_locker"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Please Insert Wifi Password"
+            android:padding="@dimen/dim_10"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_13"
+            android:gravity="center"
+            android:text="Enter Passcode"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_13"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="@dimen/dim_180"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10"
+            android:gravity="center"
+            android:hint="Enter Password"
+            android:maxLength="8"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="@dimen/dim_165"
+            android:layout_height="@dimen/dim_32"
+            android:layout_marginTop="@dimen/dim_15"
+            android:background="@drawable/selector_btn_ok"
+            android:text="Ok"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_14" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_3"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtfgd"
+                android:layout_width="@dimen/dim_1"
+                android:layout_height="@dimen/dim_1"
+                android:maxLength="4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_13"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_13"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_13"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="@dimen/dim_240"
+            android:layout_height="@dimen/dim_320"
+            android:layout_marginTop="@dimen/dim_8"
+            android:padding="@dimen/dim_5"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

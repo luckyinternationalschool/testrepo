@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eefdb92e" />
+
+
+    <ImageView
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_200"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:src="@drawable/logo_lis" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llButton"
+        android:padding="@dimen/dim_3" />
+
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_40"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_marginRight="@dimen/dim_3"
+            android:textSize="@dimen/dim_14"
+            android:background="@drawable/selector_btn_blue"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_40"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/dim_3"
+            android:background="@drawable/selector_btn_blue"
+            android:textSize="@dimen/dim_14"
+            android:text="Done" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_50"
+    android:padding="@dimen/dim_1">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dim_23"
+        android:layout_height="@dimen/dim_23"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dim_15"
+        android:src="@drawable/ic_wifi"
+        android:tint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_toRightOf="@+id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fdsfsafs"
+            android:textColor="#000"
+            android:textSize="@dimen/dim_16" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_label"
+            android:layout_toRightOf="@+id/icon"
+            android:text="Connected"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dim_10" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLock"
+        android:layout_width="@dimen/dim_20"
+        android:layout_height="@dimen/dim_20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dim_10"
+        android:src="@drawable/ic_locker"
+        android:tint="@color/colorPrimary" />
+
+</RelativeLayout>

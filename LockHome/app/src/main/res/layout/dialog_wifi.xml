@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dim_400"
+    android:layout_height="@dimen/dim_500"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="1dp">
+
+        <RelativeLayout
+            android:id="@+id/llLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_5"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_wifi"
+                android:tint="#000" />
+
+
+            <TextView
+                android:id="@+id/txts"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_toRightOf="@+id/icon"
+                android:gravity="center_vertical"
+                android:text="Wifi"
+                android:textColor="#000000"
+                android:textSize="@dimen/dim_14" />
+
+
+            <ImageView
+                android:id="@+id/btn"
+                android:layout_width="@dimen/dim_35"
+                android:layout_height="@dimen/dim_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_active" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnscan"
+        android:layout_below="@+id/cv"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="@dimen/dim_16"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_above="@+id/btnscan"
+        android:layout_below="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_5" />
+
+
+    <TextView
+        android:id="@+id/btnscan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_38"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_flat_btn_blue"
+        android:gravity="center"
+        android:text="Scan"
+        android:textColor="#fff"
+        android:textSize="@dimen/dim_16"
+
+        />
+
+</RelativeLayout>

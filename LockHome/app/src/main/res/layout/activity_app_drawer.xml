@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eefdb92e" />
+
+
+    <ImageView
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_200"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:src="@drawable/logo_lis" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_55"
+        android:background="#771f3f6d">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_35"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_toLeftOf="@+id/addApps"
+            android:visibility="gone"
+            android:background="@drawable/bg_search"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:src="@drawable/ic_search"
+                android:tint="#88000000" />
+
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim_8"
+                android:layout_marginRight="@dimen/dim_15"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Search App"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#771d4b5b"
+                android:textSize="@dimen/dim_14" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/addApps"
+            android:layout_width="@dimen/dim_35"
+            android:layout_height="@dimen/dim_50"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim_5"
+            android:layout_toLeftOf="@+id/sync"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="#fff"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/sync"
+            android:layout_width="@dimen/dim_35"
+            android:layout_height="@dimen/dim_50"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/wifi"
+            android:src="@drawable/ic_sync"
+            android:tint="#fff" />
+
+
+        <ImageView
+            android:id="@+id/wifi"
+            android:layout_width="@dimen/dim_35"
+            android:layout_height="@dimen/dim_50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim_8"
+            android:src="@drawable/ic_wifi"
+            android:tint="#fff" />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlSearch"
+        android:padding="@dimen/dim_5" />
+
+
+</RelativeLayout>

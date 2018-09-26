@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/logo"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eefdb92e" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dim_180"
+            android:layout_height="@dimen/dim_180"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_admin_lock"
+            android:tint="#1f3f6d" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This App is Locked. \n Please Contact Admin"
+            android:textColor="#1f3f6d"
+            android:textSize="@dimen/dim_20" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#22000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_50"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgLock"
+            android:layout_width="@dimen/dim_50"
+            android:layout_height="@dimen/dim_50"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_lock" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_13"
+            android:gravity="center"
+            android:text="Enter Passcode"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_13" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_3"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt"
+                android:layout_width="@dimen/dim_1"
+                android:layout_height="@dimen/dim_1"
+                android:maxLength="4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_13"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_13"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_width="@dimen/dim_13"
+                android:layout_height="@dimen/dim_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_13"
+                android:layout_marginTop="@dimen/dim_2"
+                android:background="@drawable/dot" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="@dimen/dim_240"
+            android:layout_height="@dimen/dim_320"
+            android:layout_marginTop="@dimen/dim_8"
+            android:padding="@dimen/dim_5" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
