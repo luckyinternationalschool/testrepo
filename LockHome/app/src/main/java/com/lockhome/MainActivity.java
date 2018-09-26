@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
     Handler collapseNotificationHandler;
 
     String status = "";
-
+// this is a test comment fot git hub
 
     TextView txtTime;
     Handler handle, launcherCheck;
