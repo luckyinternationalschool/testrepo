@@ -10,6 +10,7 @@ public class AppData {
     CharSequence label;
     CharSequence name;
     Drawable icon;
+    
 
 
     public CharSequence getLabel() {
